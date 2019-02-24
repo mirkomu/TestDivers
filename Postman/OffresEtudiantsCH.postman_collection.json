@@ -1,0 +1,690 @@
+{
+	"info": {
+		"_postman_id": "29bf9448-5fa4-4c82-9587-7e7b91733ad0",
+		"name": "OffresEtudiantsCH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Offre",
+			"item": [
+				{
+					"name": "AjouterValiditeOffre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "debutValidite",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "FinValidite",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterValiditeOffre?idOffre=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterValiditeOffre"
+							],
+							"query": [
+								{
+									"key": "idOffre",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AjouterConditionOffre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Condition",
+									"value": "HE-ARC",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterConditionOffre?idOffre=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterConditionOffre"
+							],
+							"query": [
+								{
+									"key": "idOffre",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AjouteLienOffre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "lien",
+									"value": "https://www.mobility.ch/fr/offre/pour-les-clients-prives/abonnement-etudiant/",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterLienOffre?idOffre=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterLienOffre"
+							],
+							"query": [
+								{
+									"key": "idOffre",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AjouterOffre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nom",
+									"value": "Abonnement d’essai pour étudiants (4 mois)",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "-Garantie Best Price pour les tarifs des trajets\n-Accès à 2’930 voitures dans toute la Suisse\n-Accès à 200 scooters dans la ville de Zurich\n-Trajets à sens unique avec Mobility One-Way\n-Nombreux avantages supplémentaires (voir ci-après)",
+									"type": "text"
+								},
+								{
+									"key": "categories",
+									"value": "transports",
+									"type": "text"
+								},
+								{
+									"key": "entreprise",
+									"value": "Mobility",
+									"type": "text"
+								},
+								{
+									"key": "typeRabais",
+									"value": "gratuit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterOffre",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterOffre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModifierOffre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nom",
+									"value": "Abonnement d’essai pour étudiants (4 mois)",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "-Garantie Best Price pour les tarifs des trajets\n-Accès à 2’930 voitures dans toute la Suisse\n-Accès à 200 scooters dans la ville de Zurich\n-Trajets à sens unique avec Mobility One-Way\n-Nombreux avantages supplémentaires (voir ci-après)",
+									"type": "text"
+								},
+								{
+									"key": "categories",
+									"value": "transports",
+									"type": "text"
+								},
+								{
+									"key": "entreprise",
+									"value": "Mobility",
+									"type": "text"
+								},
+								{
+									"key": "typeRabais",
+									"value": "gratuit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/ModifierOffre?idOffre=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"ModifierOffre"
+							],
+							"query": [
+								{
+									"key": "idOffre",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AjouterImageOffre",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "img",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterImageOffre?idOffre=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterImageOffre"
+							],
+							"query": [
+								{
+									"key": "idOffre",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetDetailsOffre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{domain}}/GetDetailsOffre?idOffre=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"GetDetailsOffre"
+							],
+							"query": [
+								{
+									"key": "idOffre",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AjouterLieuOffre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "debutValidite",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "FinValidite",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterLieuOffre?idOffre=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterLieuOffre"
+							],
+							"query": [
+								{
+									"key": "idOffre",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetListeOffres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{domain}}/GetListeOffres",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"GetListeOffres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupprimerOffre",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{domain}}/ListeOffres?id=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"ListeOffres"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profil",
+			"item": [
+				{
+					"name": "CreerProfil",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "nicolas.sibille@he-arc.ch",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "masterpwd",
+									"type": "text"
+								},
+								{
+									"key": "nom",
+									"value": "Sibille",
+									"type": "text"
+								},
+								{
+									"key": "prenom",
+									"value": "Nicolas",
+									"type": "text"
+								},
+								{
+									"key": "sexe",
+									"value": "h",
+									"type": "text"
+								},
+								{
+									"key": "canton",
+									"value": "Vaud",
+									"type": "text"
+								},
+								{
+									"key": "dateNaissance",
+									"value": "15.02.1994",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/CreerProfil",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"CreerProfil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModifierProfil",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "nicolas.sibille@he-arc.ch",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "masterpwd",
+									"type": "text"
+								},
+								{
+									"key": "nom",
+									"value": "Sibille",
+									"type": "text"
+								},
+								{
+									"key": "prenom",
+									"value": "Nicolas",
+									"type": "text"
+								},
+								{
+									"key": "sexe",
+									"value": "h",
+									"type": "text"
+								},
+								{
+									"key": "canton",
+									"value": "Vaud",
+									"type": "text"
+								},
+								{
+									"key": "dateNaissance",
+									"value": "15.02.1994",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/ModifierProfil?idUtilisateur=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"ModifierProfil"
+							],
+							"query": [
+								{
+									"key": "idUtilisateur",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AjouterInterets",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "interets",
+									"value": "transports,restaurants",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterInterets?idUtilisateur=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterInterets"
+							],
+							"query": [
+								{
+									"key": "idUtilisateur",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AjouterEcoles",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ecoles",
+									"value": "transports,restaurants",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/AjouterEcoles?idUtilisateur=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"AjouterEcoles"
+							],
+							"query": [
+								{
+									"key": "idUtilisateur",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ToggleNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "enable",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/ToggleNotification?idUtilisateur=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"ToggleNotification"
+							],
+							"query": [
+								{
+									"key": "idUtilisateur",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "BQAueDquLV7NLU4SOrdMgA9EMJXxK7UBr2CqVy7W8efYK8EMb5cUNU6W4U1buSwbnm5QGePeWcbmXzlIDyI",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "fdd8977e-dd4c-46b2-8c1b-69efacc52e5f",
+			"key": "domain",
+			"value": "localhost",
+			"type": "string"
+		}
+	]
+}
