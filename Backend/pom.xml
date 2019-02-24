@@ -91,7 +91,7 @@
     </dependency>
 
   </dependencies>
-  <!-- -->
+  <!--
   <build>
     <finalName>musicandbeerspairing-api</finalName>
     <plugins>
@@ -150,5 +150,5 @@
       </plugin>
     </plugins>
   </build>
-  <!-- -->
+  -->
 </project>
