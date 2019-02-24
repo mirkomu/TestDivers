@@ -6,10 +6,9 @@ node{
 	//	sh 'mvn -f /Backend/pom.xml -U clean package'
 	}
 	stage('Deploy war') {
-
-	        sh 'sudo service tomcat8 stop'
+	        sh 'sudo service tomcat8 stop' | echo 'adminig2019'
              //   sh 'mvn -f Backend/pom.xml -U clean package'
-                sh 'sudo cp /Backend/target/musicandbeerspairing-api/musicandbeerspairing-apiXXXXX.war /var/lib/tomcat8/webapps/'
-                sh 'sudo service tomcat8 start' 
+                sh 'sudo cp /Backend/target/musicandbeerspairing-api/musicandbeerspairing-apiXXXXX.war /var/lib/tomcat8/webapps/'|echo 'adminig2019'
+                sh 'sudo service tomcat8 start'  | echo 'adminig2019'
 	}
 }
