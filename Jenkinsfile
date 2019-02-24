@@ -1,8 +1,5 @@
 pipeline {
 	agent any
- stage('SMC Checkout'){
-    git 'https://github.com/mirkomu/TestDivers'
-  }
 	stages {
 		stage('Build') {
 			steps {
