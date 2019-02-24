@@ -1,21 +1,13 @@
-pipeline {
-	agent any
-	stages {
-		stage('Build') {
-			steps {
-				sh 'mvn -B -DskipTests clean package'
-			}
-		}
-/*		stage('Test') {
-			steps {
-				//on a pas de test pour l'instant
-				sh 'mvn test'
-			}
-		}*/
+node {
+	stage('SCM Checkout') {
+		git 'https://github.com/mirkomu/TestDivers'
 	}
- /* post {
-    always {
-      junit "target/surefire-reports/*.xml"
-    }
-  }*/
+	stage('Compile-Package') {
+		sh 'mvn test'
+	}
+		
 }
+
+
+
+
