@@ -1,9 +1,9 @@
 node {
 	stage('SCM Checkout') {
-		git 'https://github.com/mirkomu/TestDivers/Backend'
+		git 'https://github.com/mirkomu/TestDivers'
 	}
 	stage('Compile-Package') {
-		sh 'mvn test'
+		sh 'mvn -f Backend/pom.xml -B -DskipTests clean package'
 	}
 		
 }
