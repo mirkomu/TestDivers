@@ -3,7 +3,7 @@ node {
 		git 'https://github.com/mirkomu/TestDivers'
 	}
 	stage('Compile-Package') {
-		sh 'mvn -f Backend/pom.xml -B -DskipTests clean package'
+		sh 'mvn -f Backend/pom.xml clean package'
 	}
 		
 }
