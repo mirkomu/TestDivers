@@ -1,10 +1,9 @@
-node {
-  stage ('SMC Checkout') {
-            steps {
-              git 'https://github.com/mirkomu/TestDivers'
-            }
-            stage ('Compile-Package') {
-              sh 'mvn package'
-            }     
+node{
+  stage('SMC Checkout'){
+    git 'https://github.com/mirkomu/TestDivers'
+  }
+  stage('Compile-Package') {
+    sh 'mvn package'
+  }     
 }
       
