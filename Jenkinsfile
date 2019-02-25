@@ -3,7 +3,7 @@ node{
 		git 'https://github.com/mirkomu/TestDivers'
 	}
 	stage('Compile-Package') {
-	//	sh 'mvn -f /Backend/pom.xml -U clean package'
+		sh 'mvn -f /Backend/pom.xml -U clean package'
 	}
 	stage('Deploy war') {
 	     //   sh 'sudo service tomcat8 stop'
