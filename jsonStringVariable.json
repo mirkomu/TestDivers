@@ -12,17 +12,6 @@ items": [
     },
     {
       "conutryCurrency": "EUR",
-      "countryPriceTaxExcl": 15.00,
-      "countryPriceTaxIncl": 16.500,
-      "currency": "EUR",
-      "priceTaxExcl": 15.00,
-      "productId": 1001,
-      "productName": "EntrÃ©e MusÃ©e d'horlogerie",
-      "productType": "admission to cultural events",
-      "vatRate": 0.1
-    },
-    {
-      "conutryCurrency": "EUR",
       "countryPriceTaxExcl": 8.00,
       "countryPriceTaxIncl": 8.800,
       "currency": "EUR",
