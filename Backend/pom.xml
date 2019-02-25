@@ -17,18 +17,6 @@
     <version.jjwt>0.7.0</version.jjwt>
   </properties>
   <dependencies>
- <dependency>
-    <groupId>com.oracle</groupId>
-    <artifactId>ojdbc6</artifactId>
-    <version>11.2.0.3</version>
-</dependency>
-<repositories>
-    <repository>
-      <id>codelds</id>
-      <url>https://code.lds.org/nexus/content/groups/main-repo</url>
-    </repository>
-  </repositories>
-    
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-catalina</artifactId>
@@ -86,15 +74,20 @@
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20180813</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+    </dependency>    
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.0</version>
-    </dependency>
-
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc6</artifactId>
+    <version>11.2.0.3</version>
+   </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>codelds</id>
+      <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+    </repository>
+  </repositories>
+
   
   <build>
     <finalName>musicandbeerspairing-api</finalName>
